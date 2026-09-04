@@ -1,0 +1,227 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+
+}
+
+.dashboard-layout1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.dashboard-sidebar1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.dashboard-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #343a40;
+}
+
+.notification-bell {
+    background-color: #007bff;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.card-container1 {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card1 {
+    background-color: #007bff;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 220px;
+    min-height: 140px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex-grow: 1;
+}
+
+.card-header1 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+    .card-header1 i {
+        font-size: 1.5rem;
+        padding: 5px;
+        border-radius: 6px;
+        background-color: #ffffff;
+        color: #007bff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+    }
+
+    .card-header1 h3 {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #ffffff;
+        margin: 0;
+    }
+
+.card-body .amount {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0.3rem 0;
+}
+
+.card-footer {
+    margin-top: auto;
+}
+
+.btn-generate {
+    width: 100%;
+    padding: 0.6rem;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 200;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+    .btn-generate:hover {
+        color: white;
+        background-color: #1364cd;
+    }
+
+.pill {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.pill-red {
+    background-color: #fdeaea;
+    color: #dc3545;
+}
+
+.pill-green {
+    background-color: #e7f5e7;
+    color: #28a745;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.managePeriodsModal .modal-header {
+    background-color: #007bff; /* Blue */
+    color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.managePeriodsModal .modal-body {
+    background-color: #007bff; /* Light blue */
+}
+
+/ /* Soft Bootstrap-style pill badges (placed AFTER bootstrap.css) */
+.badge-soft {
+    display: inline-block;
+    padding: 6px 16px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 999px; /* pill shape */
+    line-height: 1;
+}
+
+/* Paid = soft green */
+.badge-paid {
+    color: #0f9d58;
+    background-color: rgba(15, 157, 88, 0.08);
+    border: 1px solid rgba(15,157,88,0.08);
+}
+
+/* Unpaid = soft red */
+.badge-unpaid {
+    /*    color: #d93025;
+    background-color: rgba(217, 48, 37, 0.08);
+    border: 1px solid rgba(217,48,37,0.08);
+    white-space: none;*/
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #dc3545; /* red for Not Paid */
+    color: #fff;
+    white-space: nowrap;
+}
+
+/* Pending = soft yellow/orange */
+.badge-pending {
+    color: #f59e0b;
+    background-color: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245,158,11,0.08);
+}
+
+/* Fallback neutral */
+.badge-soft-neutral {
+    color: #6c757d;
+    background-color: rgba(108,117,125,0.06);
+    border: 1px solid rgba(108,117,125,0.06);
+}
+
+/* Toggle inside Generate Finance Report card */
+.view-toggle {
+    display: flex;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 8px 0;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+    .toggle-btn.active {
+        background: #fff;
+        color: #2979FF;
+    }
+

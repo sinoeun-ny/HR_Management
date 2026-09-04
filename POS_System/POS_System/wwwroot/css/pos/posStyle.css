@@ -1,0 +1,12 @@
+﻿#right-sidebar {
+    /* Sidebar hidden by default */
+    border-radius: 10px;
+    min-width: 450px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+
+#pos{
+    background-color: yellow !important;
+}

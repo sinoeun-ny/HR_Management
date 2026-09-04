@@ -1,0 +1,347 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\checking\\Intern_pos_project\\POS_System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\views\\payroll\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\views\\payroll\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\wwwroot\\js\\employee\\employee.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\wwwroot\\js\\employee\\employee.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\wwwroot\\js\\department\\department.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\wwwroot\\js\\department\\department.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\wwwroot\\js\\department\\departmenthistory.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\wwwroot\\js\\department\\departmenthistory.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\wwwroot\\js\\department\\departmentview.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\wwwroot\\js\\department\\departmentview.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\views\\department\\viewdept.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\views\\department\\viewdept.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\views\\department\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\views\\department\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\views\\department\\depthistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\views\\department\\depthistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\wwwroot\\js\\employee\\employeeall.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\wwwroot\\js\\employee\\employeeall.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\controllers\\employee\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\controllers\\employee\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\controllers\\login\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\controllers\\login\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\wwwroot\\js\\employee\\history.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\wwwroot\\js\\employee\\history.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\views\\employee\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\views\\employee\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\views\\employee\\totalemp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\views\\employee\\totalemp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\wwwroot\\js\\empprofilevalidation\\validation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\wwwroot\\js\\empprofilevalidation\\validation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|d:\\checking\\intern_pos_project\\pos_system\\pos_system\\controllers\\department\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CCBF5EC-4C9D-4197-B7B9-B46D13791712}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\controllers\\department\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Payroll\\Index.cshtml",
+              "RelativeDocumentMoniker": "POS_System\\Views\\Payroll\\Index.cshtml",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Payroll\\Index.cshtml",
+              "RelativeToolTip": "POS_System\\Views\\Payroll\\Index.cshtml",
+              "ViewState": "AgIAAAcBAAAAAAAAAAAwwBQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-01T13:09:29.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "departmentView.js",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\wwwroot\\js\\Department\\departmentView.js",
+              "RelativeDocumentMoniker": "POS_System\\wwwroot\\js\\Department\\departmentView.js",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\wwwroot\\js\\Department\\departmentView.js",
+              "RelativeToolTip": "POS_System\\wwwroot\\js\\Department\\departmentView.js",
+              "ViewState": "AgIAAPcAAAAAAAAAAAAkwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-08-15T09:02:12.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "departmentHistory.js",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\wwwroot\\js\\Department\\departmentHistory.js",
+              "RelativeDocumentMoniker": "POS_System\\wwwroot\\js\\Department\\departmentHistory.js",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\wwwroot\\js\\Department\\departmentHistory.js",
+              "RelativeToolTip": "POS_System\\wwwroot\\js\\Department\\departmentHistory.js",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-08-15T09:01:49.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "POS_System\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "POS_System\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-15T08:01:36.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Controllers\\Login\\LoginController.cs",
+              "RelativeDocumentMoniker": "POS_System\\Controllers\\Login\\LoginController.cs",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Controllers\\Login\\LoginController.cs",
+              "RelativeToolTip": "POS_System\\Controllers\\Login\\LoginController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAADAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T08:47:50.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "POS_System\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "POS_System\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAYwJoAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T08:45:23.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "POS_System\\Views\\Login\\Index.cshtml",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "POS_System\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T08:45:13.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "History.js",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\wwwroot\\js\\Employee\\History.js",
+              "RelativeDocumentMoniker": "POS_System\\wwwroot\\js\\Employee\\History.js",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\wwwroot\\js\\Employee\\History.js",
+              "RelativeToolTip": "POS_System\\wwwroot\\js\\Employee\\History.js",
+              "ViewState": "AgIAAFgBAAAAAAAAAAAAwFsBAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-08-08T06:47:13.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Department\\Index.cshtml",
+              "RelativeDocumentMoniker": "POS_System\\Views\\Department\\Index.cshtml",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Department\\Index.cshtml",
+              "RelativeToolTip": "POS_System\\Views\\Department\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T06:35:44.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DeptHistory.cshtml",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Department\\DeptHistory.cshtml",
+              "RelativeDocumentMoniker": "POS_System\\Views\\Department\\DeptHistory.cshtml",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Department\\DeptHistory.cshtml",
+              "RelativeToolTip": "POS_System\\Views\\Department\\DeptHistory.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T06:35:37.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TotalEmp.cshtml",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Employee\\TotalEmp.cshtml",
+              "RelativeDocumentMoniker": "POS_System\\Views\\Employee\\TotalEmp.cshtml",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Employee\\TotalEmp.cshtml",
+              "RelativeToolTip": "POS_System\\Views\\Employee\\TotalEmp.cshtml",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAAAPoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T06:23:06.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Employee\\Index.cshtml",
+              "RelativeDocumentMoniker": "POS_System\\Views\\Employee\\Index.cshtml",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Employee\\Index.cshtml",
+              "RelativeToolTip": "POS_System\\Views\\Employee\\Index.cshtml",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAAAAgBAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T06:04:45.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "History.cshtml",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Employee\\History.cshtml",
+              "RelativeDocumentMoniker": "POS_System\\Views\\Employee\\History.cshtml",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Employee\\History.cshtml",
+              "RelativeToolTip": "POS_System\\Views\\Employee\\History.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAFIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T06:04:43.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Validation.js",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\wwwroot\\js\\EmpProfileValidation\\Validation.js",
+              "RelativeDocumentMoniker": "POS_System\\wwwroot\\js\\EmpProfileValidation\\Validation.js",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\wwwroot\\js\\EmpProfileValidation\\Validation.js",
+              "RelativeToolTip": "POS_System\\wwwroot\\js\\EmpProfileValidation\\Validation.js",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAmwK4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-08-04T05:19:49.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Controllers\\Employee\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "POS_System\\Controllers\\Employee\\EmployeeController.cs",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Controllers\\Employee\\EmployeeController.cs",
+              "RelativeToolTip": "POS_System\\Controllers\\Employee\\EmployeeController.cs",
+              "ViewState": "AgIAABkDAAAAAAAAAADgvzUDAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T05:34:06.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "employee.js",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\wwwroot\\js\\Employee\\employee.js",
+              "RelativeDocumentMoniker": "POS_System\\wwwroot\\js\\Employee\\employee.js",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\wwwroot\\js\\Employee\\employee.js",
+              "RelativeToolTip": "POS_System\\wwwroot\\js\\Employee\\employee.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-07-20T12:55:21.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "employeeAll.js",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\wwwroot\\js\\Employee\\employeeAll.js",
+              "RelativeDocumentMoniker": "POS_System\\wwwroot\\js\\Employee\\employeeAll.js",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\wwwroot\\js\\Employee\\employeeAll.js",
+              "RelativeToolTip": "POS_System\\wwwroot\\js\\Employee\\employeeAll.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwBAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-07-18T07:19:52.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "viewDept.cshtml",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Department\\viewDept.cshtml",
+              "RelativeDocumentMoniker": "POS_System\\Views\\Department\\viewDept.cshtml",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Views\\Department\\viewDept.cshtml",
+              "RelativeToolTip": "POS_System\\Views\\Department\\viewDept.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-18T07:09:17.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Controllers\\Department\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "POS_System\\Controllers\\Department\\DepartmentController.cs",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\Controllers\\Department\\DepartmentController.cs",
+              "RelativeToolTip": "POS_System\\Controllers\\Department\\DepartmentController.cs",
+              "ViewState": "AgIAAD4BAAAAAAAAAAAYwEoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T11:26:42.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "department.js",
+              "DocumentMoniker": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\wwwroot\\js\\Department\\department.js",
+              "RelativeDocumentMoniker": "POS_System\\wwwroot\\js\\Department\\department.js",
+              "ToolTip": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\wwwroot\\js\\Department\\department.js",
+              "RelativeToolTip": "POS_System\\wwwroot\\js\\Department\\department.js",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAIAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-26T11:23:50.016Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

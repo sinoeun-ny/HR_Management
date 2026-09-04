@@ -1,0 +1,214 @@
+﻿<div id="return_and_refund" class="container-fluid">
+    <div class="row">
+        <div class="col-12 d-flex gap-2">
+            <a asp-controller="Pos" asp-action="Index" class="icon-wrapper bg-blue-600">
+                <i class="fa-solid fa-angle-left"></i>
+            </a>
+            <div id="search" class="ms-lg-2 col-4 d-flex align-items-center border border-primary rounded">
+                <i class="fa-solid fa-magnifying-glass text-primary me-2 ms-4"></i>
+                <input type="text" class="form-control border-0 shadow-none p-0 m-0 text-primary" placeholder="Search for something..." />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h1 class="fs-1 fw-bold text-start mt-4">Return And Refund</h1>
+        </div>
+    </div>
+    <div id="form_return_and_refund_container" class="container-fluid"> 
+        <div class="row">
+            <div class="col-6 ps-0">
+                <form method="post" action="/" class="form row">
+                    <div class="col-12">
+                        <label class="form-label form-label-request" for="">
+                            Sale ID
+                        </label>
+                        <input class="form-control f border-blue" type="text" name="saleid" value="" placeholder="Sale ID" />
+                    </div>
+                    <div class="col-12 mt-2">
+                        <label class="form-label form-label-request" for="">
+                            Bar-Code
+                        </label>
+                        <input class="form-control f border-blue" type="text" name="bar-code" value="" placeholder="Bar-Code" />
+                    </div>
+                    <div class="col-12 mt-2">
+                        <label class="form-label form-label-request" for="">
+                            Move To
+                        </label>
+                        <select class="form-select border-blue f" aria-label="Default select example">
+                            <option value="1">Shelf</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-12 mt-2">
+                       <button id="btn-request" class="btn bg-blue-600 text-white border-10px w-100  ">
+                           Confirm 
+                       </button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6 p-4 shadow-lg border-10px">
+                <form action="/" method="post" class="row px-3">
+                    <div class="col-12 text-start fs-4 fw-bold mb-3">
+                        Info
+                    </div>
+
+                    <!-- Start Row for Two Columns -->
+                    <div class="row">
+                        <!-- Left Column: Info Display -->
+                        <div class="col-6">
+                            <p class="fw-gray mt-1">Sale ID: 3042</p>
+                            <p class="fw-gray mt-1">Product: Coca</p>
+                            <p class="fw-gray mt-1">Return QTY: 2</p>
+                            <p class="fw-gray mt-1">Refund: $10</p>
+                            <p class="fw-gray mt-2">Type: Cash</p>
+                        </div>
+
+                        <!-- Right Column: Reason Input -->
+						<div class="col-6 position-relative px-0">
+                            <div class="">
+                                <!-- common padding wrapper -->
+                                <label class="form-label">Enter reason</label>
+                                <input class="form-control border-10px border-blue" type="text" name="reason" placeholder="Enter reason" />
+                            </div>
+                            <!-- Position the button container absolutely at the bottom -->
+                            <div class="d-flex w-100 justify-content-between" style="position: absolute; bottom: 0; left: 0; right: 0;">
+                                <button type="button" class="border-10px btn btn-outline-primary">
+                                    Cancel
+                                </button>
+                                <button type="button" class="border-10px btn btn-primary">
+                                    Confirm
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div id="expired" class="w-full h-[550px]">
+        <div class="overflow-x-auto h-full overflow-y-auto p-2">
+            <table class="min-w-full divide-y divide-gray-200 mt-3">
+                <thead class="bg-gray-50 sticky top-0 z-10">
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Sale ID</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Bar-Code</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Customer ID</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Sale Date</th>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <!-- Table rows go here -->
+                    <!-- Repeat rows as needed -->
+                    <tr class="bg-white">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">102</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25DGD532GF</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sold</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">C0012</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-02-23</td>
+                    </tr>
+                    <tr class="bg-white">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">102</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25DGD532GF</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sold</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">C0012</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-02-23</td>
+                    </tr>
+                                        <tr class="bg-white">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">102</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25DGD532GF</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sold</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">C0012</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-02-23</td>
+                    </tr>
+                                        <tr class="bg-white">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">102</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25DGD532GF</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sold</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">C0012</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-02-23</td>
+                    </tr>
+
+                                        <tr class="bg-white">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">102</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25DGD532GF</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sold</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">C0012</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-02-23</td>
+                    </tr>
+                    <tr class="bg-white">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">102</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25DGD532GF</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sold</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">C0012</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-02-23</td>
+                    </tr>                    <tr class="bg-white">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">102</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25DGD532GF</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sold</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">C0012</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-02-23</td>
+                    </tr>
+                                        <tr class="bg-white">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">102</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25DGD532GF</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sold</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">C0012</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-02-23</td>
+                    </tr>
+                                        <tr class="bg-white">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">102</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25DGD532GF</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sold</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">C0012</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-02-23</td>
+                    </tr>
+                                        <tr class="bg-white">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">102</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25DGD532GF</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sold</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">C0012</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-02-23</td>
+                    </tr>
+                                        <tr class="bg-white">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">102</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25DGD532GF</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sold</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">C0012</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-02-23</td>
+                    </tr>
+                                        <tr class="bg-white">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">102</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25DGD532GF</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sold</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">C0012</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-02-23</td>
+                    </tr>
+                                        <tr class="bg-white">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">102</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25DGD532GF</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sold</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">C0012</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-02-23</td>
+                    </tr>
+                                        <tr class="bg-white">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">102</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25DGD532GF</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sold</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">C0012</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-02-23</td>
+                    <tr class="bg-white">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">102</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25DGD532GF</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sold</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">C0012</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-02-23</td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

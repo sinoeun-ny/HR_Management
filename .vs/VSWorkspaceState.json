@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\POS_System",
+    "\\POS_System\\POS_System",
+    "\\POS_System\\POS_System\\Views",
+    "\\POS_System\\POS_System\\Views\\Department",
+    "\\POS_System\\POS_System\\wwwroot",
+    "\\POS_System\\POS_System\\wwwroot\\css",
+    "\\POS_System\\POS_System\\wwwroot\\css\\Department",
+    "\\POS_System\\POS_System\\wwwroot\\js",
+    "\\POS_System\\POS_System\\wwwroot\\js\\Department"
+  ],
+  "SelectedNode": "\\POS_System\\POS_System\\Views\\Department\\viewDept.cshtml",
+  "PreviewInSolutionExplorer": false
+}

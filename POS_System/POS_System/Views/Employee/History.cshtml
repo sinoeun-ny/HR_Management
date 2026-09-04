@@ -1,0 +1,137 @@
+﻿@{
+    ViewData["Title"] = "Employee History";
+}
+
+<div class="container-fluid py-4">
+    <div class="d-flex align-items-center mb-4 gap-3">
+        <a href="/Employee/Index" class="btn btn-outline-primary btn-sm">
+            <i class="fas fa-arrow-left me-1"></i> Back
+        </a>
+        <h4 class="mb-0 fw-bold">Employee History</h4>
+    </div>
+
+    @* Arrow Tabs *@
+    <div class="history-tabs mb-4 ">
+        <div class="history-tab active-tab" id="cardProfile"
+             onclick="showHistory('profile')" style="background:#0d6efd;">
+            <i class="fas fa-user-circle me-2"></i>
+            <span >Employee Profile History</span>
+        </div>
+        <div class="history-tab" id="cardPosition"
+             onclick="showHistory('position')" style="background:rgb(108 117 125);">
+            <i class="fas fa-briefcase me-2"></i>
+            <span>Employee Position History</span>
+        </div>
+        <div class="history-tab" id="cardDocument"
+             onclick="showHistory('document')" style="background:rgb(108 117 125);">
+            <i class="fas fa-file-alt me-2"></i>
+            <span>Employee Document History</span>
+        </div>
+        <div class="history-tab" id="cardBlank"
+             style="background:rgb(108 117 125); cursor:default;">
+        </div>
+    </div>
+
+    @* Profile History *@
+    <div id="sectionProfile" class="history-section card border-0 shadow-sm rounded-4 p-3 bg-white mb-3">
+        <div class="d-flex align-items-center mb-3 text-black">
+            <i class="fas fa-user-circle  me-2"></i>
+            <h6 class="fw-bold mb-0 ">Employee Profile History</h6>
+        </div>
+        <div class="controls-row mb-3">
+            <div style="position:relative; flex:1; min-width:200px;">
+                <input type="text" id="btnSearchEmp" placeholder="Search employee id or name..."
+                       style="width:100%; padding-right:36px;">
+                <button id="searchClearBtnEmp"
+                        style="display:none; position:absolute; right:10px; top:50%; transform:translateY(-50%);
+                               background:none; border:none; cursor:pointer; color:#888; font-size:18px;">
+                    &#x2715;
+                </button>
+            </div>
+            <button class="search-btn" id="btnDoSearchEmp">Search</button>
+            <select id="txtSortByEmp">
+                <option value="">Sort by</option>
+                <option value="EmpAsc">Ascending</option>
+                <option value="EmpDesc">Descending</option>
+            </select>
+        </div>
+        <table id="tblEmployeeHistory" class="table table-responsive table-bordered table-hover"></table>
+    </div>
+
+    @* Position History *@
+    <div id="sectionPosition" class="history-section card border-0 shadow-sm rounded-4 p-3 bg-white mb-3" style="display:none;">
+        <div class="d-flex align-items-center mb-3 text-black">
+            <i class="fas fa-briefcase me-2"></i>
+            <h6 class="fw-bold mb-0 ">Employee Position History</h6>
+        </div>
+        <div class="controls-row mb-3">
+            <div style="position:relative; flex:1; min-width:200px;">
+                <input type="text" id="btnSearchPos" placeholder="Search employee id or name..."
+                       style="width:100%; padding-right:36px;">
+                <button id="searchClearBtnPos"
+                        style="display:none; position:absolute; right:10px; top:50%; transform:translateY(-50%);
+                               background:none; border:none; cursor:pointer; color:#888; font-size:18px;">
+                    &#x2715;
+                </button>
+            </div>
+            <button class="search-btn" id="btnDoSearchPos">Search</button>
+            <select id="txtSortByPos">
+                <option value="">Sort by</option>
+                <option value="PosAsc">Ascending</option>
+                <option value="PosDesc">Descending</option>
+            </select>
+        </div>
+        <table id="tblPositionHistory" class="table table-responsive table-bordered table-hover"></table>
+    </div>
+
+    @* Document History *@
+    <div id="sectionDocument" class="history-section card border-0 shadow-sm rounded-4 p-3 bg-white mb-3" style="display:none;">
+        <div class="d-flex align-items-center mb-3 text-black">
+            <i class="fas fa-file-alt me-2"></i>
+            <h6 class="fw-bold mb-0 ">Employee Document History</h6>
+        </div>
+        <div class="controls-row mb-3">
+            <div style="position:relative; flex:1; min-width:200px;">
+                <input type="text" id="btnSearchDoc" placeholder="Search employee id or name..."
+                       style="width:100%; padding-right:36px;">
+                <button id="searchClearBtnDoc"
+                        style="display:none; position:absolute; right:10px; top:50%; transform:translateY(-50%);
+                               background:none; border:none; cursor:pointer; color:#888; font-size:18px;">
+                    &#x2715;
+                </button>
+            </div>
+            <button class="search-btn" id="btnDoSearchDoc">Search</button>
+            <select id="txtSortByDoc">
+                <option value="">Sort by</option>
+                <option value="DocAsc">Ascending</option>
+                <option value="DocDesc">Descending</option>
+            </select>
+        </div>
+        <table id="tblDocumentHistory" class="table table-responsive table-bordered table-hover"></table>
+    </div>
+
+    @* Snapshot Modal — shared by all 3 tables *@
+    <div class="modal fade" id="snapshotModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content shadow-lg border-0 rounded-4">
+                <div class="modal-header bg-primary text-white rounded-top-4">
+                    <h5 class="modal-title" id="snapshotTitle">History Snapshot</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="snapshotBody">
+                    <div class="text-center py-4">
+                        <i class="fas fa-spinner fa-spin fa-2x text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.22.4/bootstrap-table.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.22.4/bootstrap-table.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.10.6/sweetalert2.all.min.js"></script>
+<link href="~/css/employee/History.css" rel="stylesheet" />
+<script src="~/js/Employee/History.js"></script>

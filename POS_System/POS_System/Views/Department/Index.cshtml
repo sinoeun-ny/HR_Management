@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Department";
+}
+
+<div class="container">
+    <main class="main-content">
+        <header class="header">
+            <h1>Department</h1>
+        </header>
+        <br>
+
+        <div class="controls-row">
+            <div style="position:relative; flex:1; min-width:200px;">
+                <input type="text" id="btnSearch" placeholder="Search Department"
+                       style="width:100%; padding-right:36px;">
+                <button id="searchClearBtn"
+                        style="display:none; position:absolute; right:10px; top:50%; transform:translateY(-50%);
+                               background:none; border:none; cursor:pointer; color:#888; font-size:18px;"
+                        title="Clear">
+                    &#x2715;
+                </button>
+            </div>
+            <button class="search-btn">Search</button>
+            <button type="button" id="addDeptBtn" class="btn-success bg-success text-white">
+                + Add Department
+            </button>
+            <a asp-controller="Department" asp-action="DeptHistory"
+               class="btn btn-primary">
+                <i class="fas fa-history me-1"></i> Department History
+            </a>
+            
+        </div>
+
+        <div class="cards mt-4"></div>
+
+    </main>
+</div>
+
+@* Modal — OUTSIDE .cards so it never gets wiped *@
+<div class="modal fade" id="deptModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg rounded-4">
+            <div class="modal-header bg-primary text-white rounded-top-4">
+                <h5 class="modal-title" id="deptModalTitle">Department Details</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-3">
+                    <input type="hidden" id="deptIdInput">
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Department Name <span class="text-danger">*</span></label>
+                        <input type="text" id="deptNameInput" class="form-control" placeholder="Enter department name">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold" > Abbreviation</label>
+                        <input type="text" id="txtAbbreviation" class="form-control" placeholder="Enter abbreviation " />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Description</label>
+                        <input type="text" id="deptDescInput" class="form-control" placeholder="Enter description">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bg-light rounded-bottom-4">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                    <i class="bi bi-x-lg me-2"></i>Close
+                </button>
+                <button type="button" class="btn btn-success" id="saveDeptBtn">
+                    <i class="bi bi-check-circle me-2"></i>Save
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.10.6/sweetalert2.all.min.js"></script>
+<link href="~/css/Department/department.css" rel="stylesheet" />
+<script src="~/js/Department/department.js"></script>

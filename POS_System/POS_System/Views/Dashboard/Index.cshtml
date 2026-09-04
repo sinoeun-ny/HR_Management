@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/Dashboard/Dashboard.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="d-flex">
+        <div class="content p-3" style="width: 100%; margin-left: -1px;">
+            <div class="d-flex justify-content-between mb-4" id="header">
+                <h1 class="fw-bold m-0" style="font-size: 30px;">Dashboard</h1>
+                <a asp-controller="Dashboard" asp-action="DashboardNotifications">
+                    <div class="notification-wrapper">
+                        <span class="bi--bell-fill"></span>
+                        <div class="notification-badge"></div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="row g-3">
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="card p-3 shadow-sm">
+                                <h5 class="fw-semibold">Total product</h5>
+                                <p class="mb-2">450 items</p>
+                                <button class="btn btn-sm" id="show-more">Show more</button>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card p-3 shadow-sm">
+                                <h5 class="fw-semibold">Expense</h5>
+                                <p class="mb-2">10,234 $</p>
+                                <button class="btn btn-sm" id="show-more">Show more</button>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="border border-light-subtle p-3 bg-white rounded-4 shadow-sm">
+                                <h5 class="fw-bold text-primary mb-3">Monthly Expenses</h5>
+                                <canvas id="expenseChart" style="height:200px; max-height:270px; width: 100%"></canvas>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="border border-light-subtle p-3 bg-white rounded-4 shadow-sm" style="min-height: 475px;">
+                        <h5 class="fw-bold text-primary mb-3">Most purchases</h5>
+
+                        <div class="d-flex justify-content-between align-items-center p-2 mb-3 bg-white rounded-4 shadow-sm border border-light-subtle">
+                            <div>
+                                <h6 class="mb-1 fw-semibold">Supplier name</h6>
+                                <small class="text-muted">Saint patric, St.452, Paris</small>
+                            </div>
+                            <button class="btn btn-outline-primary rounded-4 btn-sm" id="view-detail">View detail</button>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center p-2 mb-3 bg-white rounded-4 shadow-sm border border-light-subtle">
+                            <div>
+                                <h6 class="mb-1 fw-semibold">Supplier name</h6>
+                                <small class="text-muted">Saint patric, St.452, Paris</small>
+                            </div>
+                            <button class="btn btn-outline-primary rounded-4 btn-sm" id="view-detail">View detail</button>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center p-2 mb-3 bg-white rounded-4 shadow-sm border border-light-subtle">
+                            <div>
+                                <h6 class="mb-1 fw-semibold">Supplier name</h6>
+                                <small class="text-muted">Saint patric, St.452, Paris</small>
+                            </div>
+                            <button class="btn btn-outline-primary rounded-4 btn-sm" id="view-detail">View detail</button>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center p-2 mb-3 bg-white rounded-4 shadow-sm border border-light-subtle">
+                            <div>
+                                <h6 class="mb-1 fw-semibold">Supplier name</h6>
+                                <small class="text-muted">Saint patric, St.452, Paris</small>
+                            </div>
+                            <button class="btn btn-outline-primary rounded-4 btn-sm" id="view-detail">View detail</button>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center p-2 mb-3 bg-white rounded-4 shadow-sm border border-light-subtle">
+                            <div>
+                                <h6 class="mb-1 fw-semibold">Supplier name</h6>
+                                <small class="text-muted">Saint patric, St.452, Paris</small>
+                            </div>
+                            <button class="btn btn-outline-primary rounded-4 btn-sm" id="view-detail">View detail</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="border border-light-subtle p-3 bg-white rounded-4 shadow-sm">
+                        <h5 class="fw-bold text-primary mb-3">Recent Requested</h5>
+
+                        <div class="table-responsive">
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr style="font-size: small; text-align: center;">
+                                        <th>Product_id</th>
+                                        <th>Product_name</th>
+                                        <th>Category</th>
+                                        <th>Total_Quantity_Sold</th>
+                                        <th>Total_Sales_Amount</th>
+                                        <th>Action</th>
+                                        <th>Print</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="font-size: smaller; font-weight: 400; text-align: center;">
+                                    <tr>
+                                        <td>P001</td>
+                                        <td>Coffee bean</td>
+                                        <td>Food</td>
+                                        <td>4</td>
+                                        <td>20.00</td>
+                                        <td>Edit&nbsp;&nbsp;Delete</td>
+                                        <td>print</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P002</td>
+                                        <td>Dutch milk</td>
+                                        <td>Dairy Product</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                        <td>Edit&nbsp;&nbsp;Delete</td>
+                                        <td>print</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P003</td>
+                                        <td>Coca cola</td>
+                                        <td>Drink</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                        <td>Edit&nbsp;&nbsp;Delete</td>
+                                        <td>print</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/Dashboard/chart.js"></script>
+    <script src="~/js/Dashboard/iconify.min.js"></script>
+    <script src="~/js/Dashboard/Dashboard.js"></script>
+
+</body>

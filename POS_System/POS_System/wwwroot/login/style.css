@@ -1,0 +1,16 @@
+﻿.login-image {
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+}
+
+.image-container {
+    display: flex !important;
+    justify-content: flex-end !important; /* Aligns image to the right */
+}
+
+.form-container {
+    display: flex !important;
+    justify-content: flex-start !important; /* Aligns form to the left */
+    align-items: center !important; /* Centers form vertically */
+}

@@ -1,0 +1,579 @@
+﻿<div id="pos" class="container-fluid h-100">
+    <div class="row h-100 position-relative d-flex">
+        <!-- Left side: takes remaining space -->
+        <div class="col">
+            <!-- FLEX CONTAINER: Search + Icons -->
+            <div class="container-fluid p-0 m-0 " id="pos-header">
+                <div class="row mb-2 mt-0 pt-0 align-items-center">
+                    <!-- Search bar -->
+                    <div id="search" class="ms-lg-2 col-6 d-flex align-items-center border border-primary rounded">
+                        <i class="fa-solid fa-magnifying-glass text-primary me-2"></i>
+                        <input type="text" class="form-control border-0 shadow-none p-0 m-0 text-primary" placeholder="Search for something..." />
+                    </div>
+
+                    <!-- Icons -->
+                    <div id="icons" class="col d-flex justify-content-end me-1 gap-2">
+                        <a asp-controller="Pos" asp-action="OrderHistiry" class="icon-wrapper bg-primary">
+                            <i class="fa-solid fa-rotate-left"></i>
+                        </a>
+                        <a asp-controller="Pos" asp-action="Return_And_Refund" class="icon-wrapper bg-primary">
+                            <i class="fa-solid fa-list-check"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div id="categories-bar" class="ms-0 row gx-0 me-1 border-10px bg-blue-600 p-2 d-flex justify-content-center align-items-center">
+                    <div class="col-3">
+                        <div class="category border-white border-10px mx-2">
+                            <p class="p-2 text-white text-center">Fruit</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="category border-white border-10px mx-2">
+                            <p class="p-2 text-white text-center">Food</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="category border-white border-10px mx-2">
+                            <p class="p-2 text-white text-center">Drink</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="category border-white border-10px mx-2">
+                            <p class="p-2 text-white text-center">Shoes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="expired" class="w-full h-[750px] overflow-hidden">
+                <div class="overflow-x-auto h-full overflow-y-auto p-2">
+                    <table class="min-w-full divide-y divide-gray-200 mt-3">
+                        <thead class="bg-gray-50 sticky top-0 z-10">
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">No</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Product Name</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Price</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Bar-code</th>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <!-- Table rows go here -->
+                            <!-- Repeat rows as needed -->
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">A small side</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">$ 0.50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4141DFFR32</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+           
+        </div>
+
+        <!-- Right panel: make it sticky -->
+        <div class="right-panel col-3 position-sticky top-0 bg-blue-600 border-10px" style="width: 390px !important;">
+            <div class="row">
+                <div class="col bg-white p-3 border-10px my-2 mx-2 d-flex justify-content-between align-items-center">
+                    <!-- Right panel content here -->
+                    <h1 style="font-size: 24px; font-weight: bold;">Confirm Order</h1>
+                    <i class="fa-solid fa-user-pen fs-3"></i>
+                </div>
+            </div>
+            <div class="pro_container overflow-auto" style=" max-height: 490px; ">
+                <div class="row overflow-hidden" style="max-height: 120px !important; max-width: 390px;">
+                    <div class="col mx-4 "> 
+                        <div class="pro_name">
+                            <h3 class="fs-4 fw-bold text-white mb-3 mt-3">
+                                Apple
+                            </h3>
+                        </div>
+                        <div class="price_quanty d-flex justify-content-between mb-1">
+                            <div class="price">
+                                <h5 class="fw-bold fs-5 text-white ">
+                                    $ 100
+                                </h5>
+                            </div>
+                            <div class="qty">
+                                <h5 class="text-white fs-5 fw-bold">
+                                    x 2
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="line" style="height: 5px; background-color: #fff !important;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row " style="max-height: 120px !important; max-width: 390px;">
+                    <div class="col mx-4 ">
+                        <div class="pro_name">
+                            <h3 class="fs-4 fw-bold text-white mb-3 mt-3">
+                                Apple
+                            </h3>
+                        </div>
+                        <div class="price_quanty d-flex justify-content-between mb-1">
+                            <div class="price">
+                                <h5 class="fw-bold fs-5 text-white ">
+                                    $ 100
+                                </h5>
+                            </div>
+                            <div class="qty">
+                                <h5 class="text-white fs-5 fw-bold">
+                                    x 2
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="line" style="height: 5px; background-color: #fff !important;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row " style="max-height: 120px !important; max-width: 390px;">
+                    <div class="col mx-4 ">
+                        <div class="pro_name">
+                            <h3 class="fs-4 fw-bold text-white mb-3 mt-3">
+                                Apple
+                            </h3>
+                        </div>
+                        <div class="price_quanty d-flex justify-content-between mb-1">
+                            <div class="price">
+                                <h5 class="fw-bold fs-5 text-white ">
+                                    $ 100
+                                </h5>
+                            </div>
+                            <div class="qty">
+                                <h5 class="text-white fs-5 fw-bold">
+                                    x 2
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="line" style="height: 5px; background-color: #fff !important;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row " style="max-height: 120px !important; max-width: 390px;">
+                    <div class="col mx-4 ">
+                        <div class="pro_name">
+                            <h3 class="fs-4 fw-bold text-white mb-3 mt-3">
+                                Apple
+                            </h3>
+                        </div>
+                        <div class="price_quanty d-flex justify-content-between mb-1">
+                            <div class="price">
+                                <h5 class="fw-bold fs-5 text-white ">
+                                    $ 100
+                                </h5>
+                            </div>
+                            <div class="qty">
+                                <h5 class="text-white fs-5 fw-bold">
+                                    x 2
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="line" style="height: 5px; background-color: #fff !important;">
+                        </div>
+                    </div>
+                </div>
+                 <div class="row " style="max-height: 120px !important; max-width: 390px;">
+                    <div class="col mx-4 ">
+                        <div class="pro_name">
+                            <h3 class="fs-4 fw-bold text-white mb-3 mt-3">
+                                Apple
+                            </h3>
+                        </div>
+                        <div class="price_quanty d-flex justify-content-between mb-1">
+                            <div class="price">
+                                <h5 class="fw-bold fs-5 text-white ">
+                                    $ 100
+                                </h5>
+                            </div>
+                            <div class="qty">
+                                <h5 class="text-white fs-5 fw-bold">
+                                    x 2
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="line" style="height: 5px; background-color: #fff !important;">
+                        </div>
+                    </div>
+                </div>
+                 <div class="row " style="max-height: 120px !important; max-width: 390px;">
+                    <div class="col mx-4 ">
+                        <div class="pro_name">
+                            <h3 class="fs-4 fw-bold text-white mb-3 mt-3">
+                                Apple
+                            </h3>
+                        </div>
+                        <div class="price_quanty d-flex justify-content-between mb-1">
+                            <div class="price">
+                                <h5 class="fw-bold fs-5 text-white ">
+                                    $ 100
+                                </h5>
+                            </div>
+                            <div class="qty">
+                                <h5 class="text-white fs-5 fw-bold">
+                                    x 2
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="line" style="height: 5px; background-color: #fff !important;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row " style="max-height: 120px !important; max-width: 390px;">
+                    <div class="col mx-4 ">
+                        <div class="pro_name">
+                            <h3 class="fs-4 fw-bold text-white mb-3 mt-3">
+                                Apple
+                            </h3>
+                        </div>
+                        <div class="price_quanty d-flex justify-content-between mb-1">
+                            <div class="price">
+                                <h5 class="fw-bold fs-5 text-white ">
+                                    $ 100
+                                </h5>
+                            </div>
+                            <div class="qty">
+                                <h5 class="text-white fs-5 fw-bold">
+                                    x 2
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="line" style="height: 5px; background-color: #fff !important;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="amount ">
+                <div class=" row pt-3 " style="max-height: 120px !important; max-width: 390px !important;">
+                    <div class="col ">
+                        <div class="position-relative box border bg-info bg-white d-flex align-items-center justify-content-center" style="max-width: 100px; border-radius: 10px; height: 50px;">
+                            <p style="font-size: 15px; font-weight: 600; " class=" text-center">Card</p>
+                            <input type="checkbox" class="form-check-input position-absolute top-0 end-0 m-1 rounded-pill" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="position-relative box border bg-info bg-white d-flex align-items-center justify-content-center" style="max-width: 100px; border-radius: 10px; height: 50px;">
+                            <p style="font-size: 15px; font-weight: 600; " class=" text-center">QR</p>
+                            <input type="checkbox" class="form-check-input position-absolute top-0 end-0 m-1 rounded-pill" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="position-relative box border bg-info bg-white d-flex align-items-center justify-content-center" style="max-width: 100px; border-radius: 10px; height: 50px;">
+                            <p style="font-size: 15px; font-weight: 600; " class=" text-center">Cash</p>
+                            <input type="checkbox" class="form-check-input position-absolute top-0 end-0 m-1 rounded-pill" id="flexCheckDefault">
+                        </div>
+                    </div>
+                </div>
+                <div id="amount" class="bg-light position-relative border-10px mt-2 p-2 px-4" style="min-height: 200px;">
+                    <div class="row pt-3">
+                        <div class="col-12 d-flex flex-row justify-content-between">
+                            <h1 class="fw-bold fs-5" style="color: #A5A5A5;">Subtotal</h1>
+                            <h1 class="fs-5 fw-bold" style="color: #A5A5A5;">$ 0.00</h1>
+                        </div>
+                        <div class="col-12 pt-2 d-flex flex-row justify-content-between">
+                            <h1 class="fw-bold fs-5" style="color: #A5A5A5;">Subtotal</h1>
+                            <h1 class="fs-5 fw-bold" style="color: #A5A5A5;">$ 0.00</h1>
+                        </div>
+                    </div>
+
+                    <!-- FIXED absolute part -->
+                    <div class="position-absolute w-100 px-4 d-flex flex-row justify-content-between" style="bottom: 15px; left: 0; right: 0;">
+                        <h1 class="fw-bold fs-5" style="color: #A5A5A5;">Subtotal</h1>
+                        <h1 class="fs-5 fw-bold" style="color: #A5A5A5;">$ 0.00</h1>
+                    </div>
+                </div>
+                <button id="continue" class="btn w-100 mt-2 p-3 fs-4 text-white border-10px mb-1" style="background: #27A844; font-weight: 600; cursor: pointer !important;">
+                    Continue
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="confirm_content" class="container d-flex justify-content-center align-items-center">
+    <div class="confirm p-lg-3 p-md-1 border-10px border-blue" style="background-color: white; border-radius: 10px; width: 450px; height: 900px;">
+        <h1 class="fs-3 fw-bold text-center pt-4 mb-4 text-black">Confrim Charl's Order</h1>
+        <div class="row mb-2">
+            <div class="col-6 px-5">
+                <p class="fw-gray ">
+                    Customer ID
+                </p>
+                <p class="fw-gray mt--">
+                    Paymeny
+                </p>
+                <p class="fw-gray mt--">
+                    Discount
+                </p>
+                <p class="fw-gray mt--">
+                    Date
+                </p>
+                <p class="fw-gray mt--">
+                    Subtotal
+                </p>
+            </div>
+            <div class="col-6 px-5">
+                <p class="fw-gray ">
+                    2103
+                </p>
+                <p class="fw-gray mt--">
+                    Cash
+                </p>
+                <p class="fw-gray mt--">
+                    $10
+                </p>
+                <p class="fw-gray mt--">
+                    2025-02-12
+                </p>
+                <p class="fw-gray mt--">
+                    $10
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 id="payment" class="ms-5 mb-1 text-start fs-4 fw-bold">
+                    Payment
+                </h2>
+            </div>
+            <div class="">
+                <div class="line mx-4" style="height: 2px; background-color: black;"></div>
+            </div>
+        </div>
+        <div class="form-container px-0">
+            <form action="" method="post" class="row p-0 position-relative h-100">
+                <div class="px-5 col-12">
+                    <label for="" class="form-label form-label-request">
+                        Cash
+                    </label>
+                    <input type="text" class="form-control border-10px border-blue p-2 fw-bold" placeholder="" value="$10" style="font-size: 17px !important;">
+                </div>
+                <div class="px-5 col-12 mt-4">
+                    <label for="" class="form-label form-label-request">
+                        Card
+                    </label>
+                    <input type="text" class="form-control border-10px border-blue p-2 fw-bold" placeholder="" value="$10" style="font-size: 17px !important;">
+                </div>
+                <div class="px-5 col-12 mt-4">
+                    <label for="" class="form-label form-label-request">
+                        QR
+                    </label>
+                    <input type="text" class="form-control border-10px border-blue p-2 fw-bold" placeholder="" value="$10" style="font-size: 17px !important;">
+                </div>
+                <div class="px-5 col-12 mt-4">
+                    <label for="" class="form-label form-label-request">
+                        Change
+                    </label>
+                    <input type="text" class="form-control border-10px border-blue p-2 fw-bold" placeholder="" value="$10" style="font-size: 17px !important;">
+                </div>
+                <div class="form-footer mt-5">
+                    <div class="footer-text mt-4 d-flex justify-content-between border-10px mx-4 p-2" style="background: #ECECEC;">
+                        <h5 class="custom-text">Total</h5>
+                        <h5 class="custom-text">$20</h5>
+                    </div>
+                    <div class="mt-3 mx-4">
+                        <button id="samifinal_confirm" class="btn w-100 text-white" style="font-size: 17px !important; font-weight: 600; min-height: 50px; background-color: #27A844;">Confirm</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="confirm_final" class="container d-flex justify-content-center align-items-center">
+    <div class="confirm p-lg-3 p-md-1 border-10px border-blue position-relative" style="background-color: white; border-radius: 10px; width: 450px; height: 900px;">
+        <h1 class="fs-3 fw-bold text-center pt-4 mb-4 text-black">Superma</h1>
+        <div class="row mb-2">
+            <p class="fw-gray text-center">
+                st345 , saint patric , paris
+            </p>
+            <div class="col-6 px-5">
+                <p class="fw-gray ">
+                    Transition Number
+                </p>
+                <p class="fw-gray mt--">
+                    Sale ID
+                </p>
+                <p class="fw-gray mt--">
+                    Date
+                </p>
+                <p class="fw-gray mt--">
+                    Customer ID
+                </p>
+                <p class="fw-gray mt--">
+                    Payment
+                </p>
+                <p class="fw-gray mt--">
+                    Discount
+                </p>
+                <p class="fw-gray mt--">
+                    Change
+                </p>
+                <p class="fw-gray mt--">
+                    Total
+                </p>
+            </div>
+            <div class="col-6 px-5">
+                <p class="fw-gray ">
+                    #31535353
+                </p>
+                <p class="fw-gray mt--">
+                    21344
+                </p>
+                <p class="fw-gray mt--">
+                    2025-02-12
+                </p>
+                <p class="fw-gray mt--">
+                    3232
+                </p>
+                <p class="fw-gray mt--">
+                    cash
+                </p>
+                <p class="fw-gray mt--">
+                    $0
+                </p>
+                <p class="fw-gray mt--">
+                    $0
+                </p>
+                <p class="fw-gray mt--">
+                    $20
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="">
+                <div class="line mx-4" style="height: 2px; background-color: black;"></div>
+            </div>
+            <div class="col-12">
+                <h2 id="payment_items" class="mb-1 text-start fs-4 fw-bold text-center">
+                    Items
+                </h2>
+            </div>
+        </div>
+        <div class="form-container px-0">
+            <form action="" method="post" class="row p-0 position-relative h-100">
+                <div class="px-5 col-12 d-flex justify-content-between">
+                    <p class="form-label-request">Apple (x2)</p>
+                    <p class="form-label-request">$10</p>
+                </div>
+                <div class="px-5 col-12 d-flex justify-content-between">
+                    <p class="form-label-request">Juice (x2)</p>
+                    <p class="form-label-request">$10</p>
+                </div>
+            </form>
+        </div>
+        <div class="form-footer mt-auto mb-3 " style="bottom: 0; left: 45% !important; right: 45% !important;">
+           <h4 class="text-center">Thank You!</h4>
+        </div>
+    </div>
+</div>
+

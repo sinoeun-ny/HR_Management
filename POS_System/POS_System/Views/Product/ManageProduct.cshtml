@@ -1,0 +1,185 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!-- Header -->
+<div class="col-md-12 ms-sm-auto col-lg-12 px-md-4 py-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4 text-dark">
+        <h1 class="fs-1 fw-bold" style="margin-left:30px">Product Management</h1>
+        <div id="icons-product" class="col-md-3  flex text-end justify-content-end">
+            <div class="notification-wrapper">
+                <span class="bi--bell-fill"></span>
+                <div class="notification-badge"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+
+        <div class="d-flex justify-content-between align-items-center mb-3 text-dark">
+            <div style="font-size:18px;">
+                <strong>All Category : </strong> 10 Types &nbsp;&nbsp;
+            </div>
+            <div class="d-flex gap-2">
+                <input type="text" class="form-control form-control-sm" placeholder="Search">
+                <select class="form-select form-select-sm" style="width: 120px;">
+                    <option>Title</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Add Button -->
+        <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            + Add Product
+        </button>
+
+        <!-- Table -->
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle text-center">
+                <thead class="table-light" style="font-size:18px;">
+                    <tr>
+                        <th>Product_id</th>
+                        <th>Product_name</th>
+                        <th>Category_id</th>
+                        <th>Unit_Price</th>
+                        <th>Action</th>
+                        <th>Print</th>
+                    </tr>
+                </thead>
+                <tbody style="font-size:18px;">
+                    <!-- Row 1 -->
+                    <tr>
+                        <td>P001</td>
+                        <td>Coffee bean</td>
+                        <td>Food</td>
+                        <td>4</td>
+                        <td style="display:flex;flex-direction:row;gap:10px;justify-content:center"><button class="btn btn-primary">Edit</button><button class="btn btn-danger">Delete</button></td>
+
+                        <td><a href="#">print</a></td>
+                    </tr>
+                    <!-- Row 2 -->
+                    <tr>
+                        <td>P002</td>
+                        <td>Dutch milk</td>
+                        <td>Dairy Product</td>
+                        <td>0</td>
+                        <td style="display:flex;flex-direction:row;gap:10px;justify-content:center"><button class="btn btn-primary">Edit</button><button class="btn btn-danger">Delete</button></td>
+                        <td><a href="#">print</a></td>
+                    </tr>
+                    <!-- Row 3 -->
+                    <tr>
+                        <td>P003</td>
+                        <td>Coca cola</td>
+                        <td>Drink</td>
+                        <td>0</td>
+                        <td style="display:flex;flex-direction:row;gap:10px;justify-content:center"><button class="btn btn-primary">Edit</button><button class="btn btn-danger">Delete</button></td>
+                        <td><a href="#">print</a></td>
+                    </tr>
+                    <!-- Row 4 -->
+                    <tr>
+                        <td>P004</td>
+                        <td>Coca cola</td>
+                        <td>Drink</td>
+                        <td>0</td>
+                        <td style="display:flex;flex-direction:row;gap:10px;justify-content:center"><button class="btn btn-primary">Edit</button><button class="btn btn-danger">Delete</button></td>
+                        <td><a href="#">print</a></td>
+                    </tr>
+                    <!-- Row 5 -->
+                    <tr>
+                        <td>P005</td>
+                        <td>Coffee bean</td>
+                        <td>Food</td>
+                        <td>4</td>
+                        <td style="display:flex;flex-direction:row;gap:10px;justify-content:center"><button class="btn btn-primary">Edit</button><button class="btn btn-danger">Delete</button></td>
+                        <td><a href="#">print</a></td>
+                    </tr>
+                    <!-- Row 6 -->
+                    <tr>
+                        <td>P006</td>
+                        <td>Dutch milk</td>
+                        <td>Dairy Product</td>
+                        <td>0</td>
+                        <td style="display:flex;flex-direction:row;gap:10px;justify-content:center"><button class="btn btn-primary">Edit</button><button class="btn btn-danger">Delete</button></td>
+
+                        <td><a href="#">print</a></td>
+                    </tr>
+                    <!-- Row 7 -->
+                    <tr>
+                        <td>P007</td>
+                        <td>Coca cola</td>
+                        <td>Drink</td>
+                        <td>0</td>
+                        <td style="display:flex;flex-direction:row;gap:10px;justify-content:center"><button class="btn btn-primary">Edit</button><button class="btn btn-danger">Delete</button></td>
+
+                        <td><a href="#">print</a></td>
+                    </tr>
+                    <!-- Row 8 -->
+                    <tr>
+                        <td>P008</td>
+                        <td>Coca cola</td>
+                        <td>Drink</td>
+                        <td>0</td>
+                        <td style="display:flex;flex-direction:row;gap:10px;justify-content:center"><button class="btn btn-primary">Edit</button><button class="btn btn-danger">Delete</button></td>
+
+                        <td><a href="#">print</a></td>
+                    </tr>
+                    <!-- Row 9 -->
+                    <tr>
+                        <td>P009</td>
+                        <td>Coffee bean</td>
+                        <td>Food</td>
+                        <td>4</td>
+                        <td style="display:flex;flex-direction:row;gap:10px;justify-content:center"><button class="btn btn-primary">Edit</button><button class="btn btn-danger">Delete</button></td>
+
+                        <td><a href="#">print</a></td>
+                    </tr>
+                    <!-- Row 10 -->
+                    <tr>
+                        <td>P0010</td>
+                        <td>Dutch milk</td>
+                        <td>Dairy Product</td>
+                        <td>0</td>
+                        <td style="display:flex;flex-direction:row;gap:10px;justify-content:center"><button class="btn btn-primary">Edit</button><button class="btn btn-danger">Delete</button></td>
+
+                        <td><a href="#">print</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@* Dialog *@
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header border-dark border-bottom">
+                <h5 class="modal-title fw-bold fs-4" style="color:midnightblue" id="exampleModalLabel">Add Product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-2">
+                        <label for="recipient-name" class="col-form-label">Product_name:</label>
+                        <input type="text" class="form-control border-info" style="border:solid 1px" id="Product_name">
+                    </div>
+                    <div class="mb-2">
+                        <label for="message-text" class="col-form-label">Category:</label>
+                        <input type="text" class="form-control border-info" style="border:solid 1px " id="Category">
+
+                        @* <textarea class="form-control" id="message-text"></textarea> *@
+                    </div>
+                    <div class="mb-2">
+                        <label for="message-text" class="col-form-label">Unit_Price:</label>
+                        <input type="text" class="form-control border-info" style="border:solid 1px " id="Unit_Price">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer border-dark border-bottom">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

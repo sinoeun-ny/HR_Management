@@ -1,0 +1,329 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\POS_System.bundle.scp.css",
+      "PackagePath": "staticwebassets\\POS_System.fo8zfwl2sy.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\css\\Setting\\Setting.css",
+      "PackagePath": "staticwebassets\\css\\Setting\\Setting.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\css\\dashboard\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard\\dashboard.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\css\\dashboard\\style.css",
+      "PackagePath": "staticwebassets\\css\\dashboard\\style.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\css\\pos\\posStyle.css",
+      "PackagePath": "staticwebassets\\css\\pos\\posStyle.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\css\\pos\\style3.css",
+      "PackagePath": "staticwebassets\\css\\pos\\style3.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\css\\pos\\styles.css",
+      "PackagePath": "staticwebassets\\css\\pos\\styles.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\css\\report\\stylereport.css",
+      "PackagePath": "staticwebassets\\css\\report\\stylereport.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\image\\login.jpg",
+      "PackagePath": "staticwebassets\\image\\login.jpg"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\js\\Ajaxs\\ajaxHelper.js",
+      "PackagePath": "staticwebassets\\js\\Ajaxs\\ajaxHelper.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\js\\Inventory\\Index.js",
+      "PackagePath": "staticwebassets\\js\\Inventory\\Index.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\js\\Inventory\\Inventory.js",
+      "PackagePath": "staticwebassets\\js\\Inventory\\Inventory.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\js\\Inventory\\RequestForm.js",
+      "PackagePath": "staticwebassets\\js\\Inventory\\RequestForm.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\js\\Setting\\Setting.js",
+      "PackagePath": "staticwebassets\\js\\Setting\\Setting.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\js\\posScript.js",
+      "PackagePath": "staticwebassets\\js\\posScript.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\AUB\\Y2 S1\\Internship\\PurchaseOrder\\PC\\POS_System\\POS_System\\wwwroot\\login\\style.css",
+      "PackagePath": "staticwebassets\\login\\style.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.POS_System.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.POS_System.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.POS_System.props",
+      "PackagePath": "build\\POS_System.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.POS_System.props",
+      "PackagePath": "buildMultiTargeting\\POS_System.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.POS_System.props",
+      "PackagePath": "buildTransitive\\POS_System.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "View Department";
+}
+
+<div class="container-fluid py-4">
+    <div class="d-flex align-items-center mb-4 gap-3">
+        <a href="/Department/Index" class="btn btn-outline-primary btn-sm">
+            <i class="fas fa-arrow-left me-1"></i> Back
+        </a>
+        <h4 class="mb-0 fw-bold" id="deptTitle">Department</h4>
+    </div>
+
+    @* Summary Cards *@
+    <div class="row g-3 mb-3  " id="infoBox">
+        <div class="col-md-4 bg-white">
+            <div class="card border-1 shadow-sm rounded-4 text-center p-3">
+                <div class="fw-bold fs-2 text-primary" id="cardEmpTotal">---</div>
+                <div class="fw-bold text-muted">Total Employees</div>
+            </div>
+        </div>
+        <div class="col-md-4 bg-white">
+            <div class="card  border-1 shadow-sm rounded-4 text-center p-3">
+                <div class="fw-bold fs-2 text-success" id="cardPosTotal">---</div>
+                <div class="fw-bold text-muted">Total Positions</div>
+            </div>
+        </div>
+        <div class="col-md-4 bg-white">
+            <div class="card border-1 shadow-sm rounded-4 text-center p-3">
+                <div class="fw-bold fs-2 text-warning" id="cardAbbr">---</div>
+                <div class="fw-bold text-muted">Abbreviation</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-auto">
+        <div class="card border-1 shadow-sm rounded-4 text-center p-3 bg-white">
+            <div class="text-black fw-bold ">Description</div>
+
+            <div class="fw-bold fs-2 text-secondary" id="cardDesc" style="font-size:14px !important;">---</div>
+        </div>
+    </div>
+    <br />
+    @* Employee Table *@
+    <div class="card border-0 shadow-sm rounded-4 p-3 bg-white">
+        <h6 class="fw-bold mb-3 text-black">
+            <i class="fas fa-users me-2"></i>Employees in this Department
+        </h6>
+
+        <div class="controls-row mb-3">
+            <div style="position:relative; flex:1; min-width:200px;">
+                <input type="text" class="text-black"id="btnSearchAll" placeholder="Search by ID or name..."
+                       style="width:100%; padding-right:36px;">
+                       <button id="searchClearBtnAll"
+                        style="display:none; position:absolute; right:10px; top:50%; transform:translateY(-50%);
+                   background:none; border:none; cursor:pointer; color:#888; font-size:18px;">
+                    &#x2715;
+                    </button>
+            </div>
+            <button class=" bg-primary text-white search-btn-all">Search</button>
+            <select id="txtSortByAll" class="form-select" style="width:auto;">
+                <option value="">Sort by</option>
+                <option value="Ascending">Ascending</option>
+                <option value="Descending">Descending</option>
+            </select>
+        </div>
+
+        <table id="tblViewDept" class="table table-responsive table-bordered table-hover"></table>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.22.4/bootstrap-table.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.22.4/bootstrap-table.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.10.6/sweetalert2.all.min.js"></script>
+<link href="~/css/Department/departmentView.css" rel="stylesheet" />
+<script src="~/js/Department/departmentView.js"></script>

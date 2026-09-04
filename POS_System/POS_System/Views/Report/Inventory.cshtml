@@ -1,0 +1,279 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link href="/css/report/stylereport.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="/css/report/stylereport.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<div class="container" id="card-info">
+    <div class="row">
+
+        <h style="font-size: 56px; font-weight:bold;">Report</h>
+
+        <div class="col-md-3" id="all_report">
+            <div class="card text-white d-flex align-items-center p-3 border-0 shadow-lg"
+                 style="background-color: #007bff; border-radius: 15px;">
+
+                <div class="d-flex align-items-center w-100">
+                    <div class="ms-3 icon">
+                        <i class="fas fa-chart-line" style="font-size: 2.5rem;"></i>
+                    </div>
+
+                    <div class="ms-3">
+                        <h6 class="fw-bold mb-1" style="font-size: 1.1rem;">Expense</h6>
+                        <p class="mb-1" style="font-size: 0.85rem;">Today</p>
+                        <h4 class="fw-bold mb-0" style="font-size: 1.2rem;">$1999</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-md-3" id="all_report">
+            <div class="card text-white d-flex align-items-center justify-content-center p-3 border-0 shadow-lg"
+                 style="background-color: #007bff; border-radius: 15px;">
+
+                <div class="d-flex align-items-center w-100">
+                    <div class="ms-3 icon">
+                        <i class="bi bi-bar-chart-line" style="font-size: 2.5rem;"></i>
+                    </div>
+
+                    <div class="ms-3">
+                        <h6 class="fw-bold mb-1" style="font-size: 1.1rem;">Inventory</h6>
+                        <p class="mb-1" style="font-size: 0.85rem;">Top Product</p>
+                        <h4 class="fw-bold mb-0" style="font-size: 1.2rem;">Dairy product</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3" id="all_report">
+            <div class="card text-white d-flex align-items-center justify-content-center p-3 border-0 shadow-lg"
+                 style="background-color: #007bff; border-radius: 15px;">
+
+                <div class="d-flex align-items-center w-100">
+                    <div class="ms-3 icon">
+                        <i class="fas fa-boxes" style="font-size: 2.5rem;"></i>
+                    </div>
+
+                    <div class="ms-3">
+                        <h6 class="fw-bold mb-1" style="font-size: 1.1rem;">Product</h6>
+                        <p class="mb-1" style="font-size: 0.85rem;">Today</p>
+                        <h4 class="fw-bold mb-0" style="font-size: 1.2rem;">20</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3" id="all_report">
+            <div class="card text-white d-flex align-items-center justify-content-center p-3 border-0 shadow-lg"
+                 style="background-color: #007bff; border-radius: 15px;">
+
+                <div class="d-flex align-items-center w-100">
+                    <div class="ms-3 icon">
+                        <i class="fas fa-credit-card" style="font-size: 2.5rem;"></i>
+                    </div>
+
+                    <div class="ms-3">
+                        <h6 class="fw-bold mb-1" style="font-size: 1.1rem;">Supplier</h6>
+                        <p class="mb-1" style="font-size: 0.85rem;">BenBen</p>
+                        <h4 class="fw-bold mb-0" style="font-size: 1.2rem;">KPC</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<form action="/" method="post">
+    <div class="position-relative mt-5" style="width: 400px;">
+        <!-- Search Input -->
+        <input id="search"
+               class="form-control bg-white border border-primary rounded-2 ps-5"
+               placeholder="Search for something..."
+               style="width: 100%; height: 42px; font-size: 16px;">
+
+        <!-- Search Icon -->
+        <div class="position-absolute start-0 top-50 translate-middle-y ml-7">
+            <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round">
+                <path d="M21 21l-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0z" />
+            </svg>
+        </div>
+    </div>
+</form>
+
+
+
+<div class="container mt-3 containerbutton"
+     style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); border-radius: 15px; padding: 10px; width: 588px; background-color: white;">
+    <div class="d-flex gap-3">
+        <a asp-controller="report" asp-action="Index" class="btn btn-outline-primary p-2" role="button">
+            Expense
+        </a>
+        <a asp-controller="report" asp-action="Inventory" class="btn btn-primary p-2 text-white" role="button">
+            Inventory
+        </a>
+        <a asp-controller="report" asp-action="Product" class="btn btn-outline-primary p-2" role="button">
+            Product
+        </a>
+        <a asp-controller="report" asp-action="Supplier" class="btn btn-outline-primary p-2" role="button">
+            Supplier
+        </a>
+    </div>
+</div>
+
+
+@* Table *@
+<div class="container-fluid mt-4 p-3" style="width: 100%; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); border-radius: 15px; background: #ffffff;">
+    <div class="table-responsive" style="max-height: 450px; overflow-y: auto;">
+        <table class="table table-bordered">
+            <thead style="background: #007bff; color: white; position: sticky; top: 0;">
+                <tr style="background-color: #F8F9FA;">
+                    <th style="background-color: #F8F9FA;">Inventory ID</th>
+                    <th style="background-color: #F8F9FA;">Product ID</th>
+                    <th style="background-color: #F8F9FA;">Category</th>
+                    <th style="background-color: #F8F9FA;">Quantity </th>
+                    <th style="background-color: #F8F9FA;">Exprired Date</th>
+                    <th style="background-color: #F8F9FA;">Action</th>
+                    <th style="background-color: #F8F9FA;">Print</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Data -->
+                <tr style="background: #f8f9fa;">
+                    <td>01</td>
+                    <td>P0001</td>
+                    <td>Electronics</td>
+                    <td>12</td>
+                    <td>12/12/2025</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                    <td><button class="btn btn-sm btn-success"><i class="fa-solid fa-print"></i></button></td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>P0001</td>
+                    <td>Electronics</td>
+                    <td>12</td>
+                    <td>12/12/2025</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                    <td><button class="btn btn-sm btn-success"><i class="fa-solid fa-print"></i></button></td>
+                </tr>
+                <tr style="background: #f8f9fa;">
+                    <td>01</td>
+                    <td>P0001</td>
+                    <td>Electronics</td>
+                    <td>12</td>
+                    <td>12/12/2025</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                    <td><button class="btn btn-sm btn-success"><i class="fa-solid fa-print"></i></button></td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>P0001</td>
+                    <td>Electronics</td>
+                    <td>12</td>
+                    <td>12/12/2025</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                    <td><button class="btn btn-sm btn-success"><i class="fa-solid fa-print"></i></button></td>
+                </tr>
+                <tr style="background: #f8f9fa;">
+                    <td>01</td>
+                    <td>P0001</td>
+                    <td>Electronics</td>
+                    <td>12</td>
+                    <td>12/12/2025</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                    <td><button class="btn btn-sm btn-success"><i class="fa-solid fa-print"></i></button></td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>P0001</td>
+                    <td>Electronics</td>
+                    <td>12</td>
+                    <td>12/12/2025</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                    <td><button class="btn btn-sm btn-success"><i class="fa-solid fa-print"></i></button></td>
+                </tr>
+                <tr style="background: #f8f9fa;">
+                    <td>01</td>
+                    <td>P0001</td>
+                    <td>Electronics</td>
+                    <td>12</td>
+                    <td>12/12/2025</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                    <td><button class="btn btn-sm btn-success"><i class="fa-solid fa-print"></i></button></td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>P0001</td>
+                    <td>Electronics</td>
+                    <td>12</td>
+                    <td>12/12/2025</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                    <td><button class="btn btn-sm btn-success"><i class="fa-solid fa-print"></i></button></td>
+                </tr>
+                <tr style="background: #f8f9fa;">
+                    <td>01</td>
+                    <td>P0001</td>
+                    <td>Electronics</td>
+                    <td>12</td>
+                    <td>12/12/2025</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                    <td><button class="btn btn-sm btn-success"><i class="fa-solid fa-print"></i></button></td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>P0001</td>
+                    <td>Electronics</td>
+                    <td>12</td>
+                    <td>12/12/2025</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                    <td><button class="btn btn-sm btn-success"><i class="fa-solid fa-print"></i></button></td>
+                </tr>
+                <!-- Add 10 more rows similarly -->
+            </tbody>
+        </table>
+    </div>
+</div>
+

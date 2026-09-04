@@ -1,0 +1,297 @@
+﻿@model IEnumerable<POS_System.Models.Employee.Employee>
+@{
+    ViewData["Title"] = "Employee";
+}
+
+<div class="container">
+    <div class="header">Employee Profile</div>
+
+    @* Bell notification *@
+    <div style="position:fixed; top:16px; right:24px; z-index:9999;">
+        <div style="position:relative; display:inline-block; cursor:pointer;" id="bellWrapper">
+            <i class="fas fa-bell fa-lg" style="color:#333;"></i>
+            <span id="bellBadge"
+                  style="display:none; position:absolute; top:-6px; right:-8px;
+                         background:#dc3545; color:#fff; border-radius:50%;
+                         font-size:10px; width:18px; height:18px;
+                         display:flex; align-items:center; justify-content:center;">0</span>
+        </div>
+        <div id="bellDropdown"
+             style="display:none; position:absolute; right:0; top:32px; width:320px;
+                    background:#fff; border:1px solid #dee2e6; border-radius:8px;
+                    box-shadow:0 4px 12px rgba(0,0,0,0.15); max-height:400px; overflow-y:auto; z-index:9999;">
+            <div style="padding:10px 14px; border-bottom:1px solid #dee2e6; font-weight:600; font-size:13px;">
+                Employees Pending Review
+            </div>
+            <div id="bellList" style="padding:8px 0;"></div>
+        </div>
+    </div>
+
+    @* Stats Cards *@
+
+    <div class="stats-row ">
+
+        <a asp-controller="Employee"
+           asp-action="TotalEmp"
+           class="card-link">
+
+            <div class="bg-primary stat-card text-white h-100 ">
+                <div class="stat-label">Total Employees</div>
+            </div>
+
+        </a>
+
+        <a asp-controller="Employee"
+           asp-action="History"
+           class="card-link">
+
+            <div class="bg-primary stat-card text-white h-100 ">
+                <div class="stat-label">Employee History</div>
+            </div>
+
+        </a>
+
+    </div>
+
+   
+
+   
+
+    @* Search + Controls *@
+    <div class="controls-row">
+        <div style="position:relative; flex:1; min-width:200px;">
+            <input type="text" id="btnSearch" placeholder="Search employee id or name..."
+                   style="width:100%; padding-right:36px;">
+            <button id="searchClearBtn"
+                    style="display:none; position:absolute; right:10px; top:50%; transform:translateY(-50%);
+                           background:none; border:none; cursor:pointer; color:#888; font-size:18px; line-height:1;"
+                    title="Clear">
+                &#x2715;
+            </button>
+        </div>
+        <button class="search-btn">Search</button>
+        <select id="txtSortBy">
+            <option value="" selected disabled>Sort by</option>
+            <option value="NewlyHire">Newly Hire</option>
+            <option value="SeniorEmployee">Senior Employee</option>
+        </select>
+        <button type="button" id="btnAddEmployee" class="btn-success bg-success text-white"
+                data-bs-toggle="modal" href="#employeeModal">
+            + Add Employee
+        </button>
+    </div>
+
+    @* Add/Edit Employee Modal *@
+    <div class="modal fade" id="employeeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content shadow-lg border-0 rounded-4">
+                <div class="modal-header bg-primary text-white rounded-top-4">
+                    <h5 class="modal-title" id="exampleModalLabel">+ New Employee Profile</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active text-dark" id="EmployeeID" data-bs-toggle="tab"
+                                    data-bs-target="#EmployeeInfo" type="button" role="tab">
+                                Employee Info
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-dark" id="employee-position-tab" data-bs-toggle="tab"
+                                    data-bs-target="#EmployeePosition" type="button" role="tab">
+                                Employee Position
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-dark" id="document-storage-tab" data-bs-toggle="tab"
+                                    data-bs-target="#DocumentStorage" type="button" role="tab">
+                                Document Storage
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+
+                        @* Tab: Employee Info *@
+                        <div class="tab-pane fade show active" id="EmployeeInfo" role="tabpanel">
+                            <div class="modal-body row g-3 ">
+                                <input type="hidden" id="EmployeeId" value="0">
+                                <div class="col-md-9">
+                                    <label class="form-label">Profile Photo / File</label>
+                                    <div id="imagePreview">
+                                        <span>Click to upload</span>
+                                        <button type="button" id="removeImage">x</button>
+                                    </div>
+                                    <input type="file" id="ProfilePhoto" accept="image/*" style="display:none;" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-control" placeholder="Input your Firstname" id="txtFirstName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Input your Lastname" id="txtLastName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Gender</label>
+                                    <select class="form-select" id="Gender" required>
+                                        <option value="" selected disabled>Select Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Date of Birth</label>
+                                    <input type="date" class="form-control" id="dateOfBirth" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email</label>
+                                    <input type="text" class="form-control" id="txtEmail" placeholder="Input Email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="text" class="form-control" id="PhoneNumber" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="txtAddress" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Hire Date</label>
+                                    <input type="date" class="form-control" id="HireDate" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Status</label>
+                                    <select class="form-select" id="Status" required>
+                                        <option value="" selected disabled>Select status</option>
+                                        <option value="Active">Active</option>
+                                        <option value="Inactive">Inactive</option>
+                                    </select>
+                                </div>
+                                <button type="button" id="btnSaveUsers" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+
+                        @* Tab: Position *@
+                        <div class="tab-pane fade" id="EmployeePosition" role="tabpanel">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Department</label>
+                                    <select class="form-select" id="DepartmentId" required>
+                                        <option value="" selected disabled>Select Department</option>
+                                        <option value="1">Information Technology</option>
+                                        <option value="2">Finance and Banking</option>
+                                        <option value="3">Human Resource</option>
+                                        <option value="4">Marketing and Sales</option>
+                                        <option value="5">Operations Management</option>
+                                        <option value="6">Customer Service</option>
+                                        <option value="7">Research and Development</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Start Date</label>
+                                    <input type="date" id="StartDate" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Position</label>
+                                    <select class="form-select" id="txtPositionName" required>
+                                        <option value="" selected disabled>Select Position</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">End Date</label>
+                                    <input type="date" id="EndDate" class="form-control">
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label">Salary</label>
+                                    <input type="text" class="form-control" id="txtSalary" placeholder="Enter Employee Salary">
+                                </div>
+                                <div class="col-md-12" id="txtUpdatePromote" style="display:none;">
+                                    <label class="form-label">Update Option</label>
+                                    <select class="form-select" id="txtUpdate">
+                                        <option value="" selected disabled></option>
+                                        <option value="Update">Update</option>
+                                        <option value="Promote">Promote</option>
+                                    </select>
+                                </div>
+                                <button type="button" id="btnSaveEmployeePosition" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+
+                        @* Tab: Documents *@
+                        <div class="tab-pane fade" id="DocumentStorage" role="tabpanel">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Document Name</label>
+                                    <input type="text" class="form-control" id="txtDocumentName">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Expiry Date</label>
+                                    <input type="date" class="form-control" id="txtExpiryDate">
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label">Notes</label>
+                                    <input type="text" class="form-control" id="txtNotes">
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label">Upload Documents</label>
+                                    <input class="form-control" type="file" accept=".pdf,.jpg,.png"
+                                           id="txtDocumentType" multiple>
+                                    <small class="text-muted">Hold Ctrl/Cmd to select multiple files.</small>
+                                    <div id="documentPreviewArea" class="mt-3"></div>
+                                </div>
+                                <button type="button" id="BtnSaveDocument" class="btn  btn-primary">Save</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table id="tblEmployeeInfo" class="table table-responsive table-bordered"></table>
+</div>
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="~/lib/bootstrap-table/bootstrap-table.min.css" rel="stylesheet" />
+<link href="~/css/employee/employee.css" rel="stylesheet" />
+<link href="~/lib/sweetAlert/css/sweetAlert2.min.css" rel="stylesheet" />
+
+
+
+@*      ─
+   All scripts loaded from CDN so order is guaranteed.
+   _Layout.cshtml jQuery is neutralised by the noConflict
+   guard in employee.js — no more "$ is not defined".
+        ─ *@
+
+@* 1. jQuery — loaded ONCE here; _Layout version is ignored via noConflict guard *@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+@* 2. Bootstrap JS (needs jQuery) *@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+@* 3. Bootstrap Table (needs jQuery + Bootstrap) *@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.22.4/bootstrap-table.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.22.4/bootstrap-table.min.js"></script>
+
+@* 4. SweetAlert2 *@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.10.6/sweetalert2.all.min.js"></script>
+
+@* 5. Chart.js *@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+
+@* 6. App scripts *@
+<script src="~/js/Ajaxs/ajaxHelper.js"></script>
+<script src="~/js/Employee/employee.js"></script>
+
+<script src="~/js/EmpProfileValidation/Validation.js"></script>
+
+
+
+<script>
+    
+    
+</script>

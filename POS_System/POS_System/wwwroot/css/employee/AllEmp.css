@@ -1,0 +1,9 @@
+﻿* {
+    font-family: 'Poppins', sans-serif;
+}
+
+#donutChart ,#newHire,#historyChart {
+    border: 2px;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
+    border-style: solid;
+}

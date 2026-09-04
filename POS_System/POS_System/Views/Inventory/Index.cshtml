@@ -1,0 +1,147 @@
+﻿
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<main class="col-md-12 ms-sm-auto col-lg-12 px-md-4 py-4">
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="fs-1 fw-bold">Inventory</h1>
+        <div class="notification-wrapper">
+            <span class="bi--bell-fill"></span>
+            <div class="notification-badge"></div>
+        </div>
+    </div>
+
+    <!-- Summary Cards -->
+    <div class="row mb-4">
+        <div class="col-md-3 mb-3">
+            <div class="card bg-primary text-white h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Stock status</h5>
+                    <h3>100% Available</h3>
+                    <button class="btn btn-light btn-sm mt-2">Show more</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card bg-primary text-white h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Supplier</h5>
+                    <h3>450 Supplier</h3>
+                    <button class="btn btn-light btn-sm mt-2">Show more</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card bg-primary text-white h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Last Stock</h5>
+                    <p>Mon, 12 March 2024</p>
+                    <button class="btn btn-light btn-sm mt-2">Show more</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card bg-primary text-white h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Next Stock</h5>
+                    <p>Wed, 29 March 2024</p>
+                    <button class="btn btn-light btn-sm mt-2">Show more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Action Buttons and Supplier Info -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary"><a class="text-white" asp-area="" asp-controller="Inventory" asp-action="Supplier">Add supplier</a></button>
+                <button class="btn btn-primary"><a class="text-white" asp-area="" asp-controller="Inventory" asp-action="RequestProduct">🛒 Request product</a></button>
+                <button class="btn btn-primary"><a class="text-white" asp-area="" asp-controller="Inventory" asp-action="ProductCheck">🔍 Check product</a></button>
+                <button class="btn btn-primary"><a class="text-white" asp-area="" asp-controller="Inventory" asp-action="CentralStock">📦 Manage Stock</a></button>
+                <button class="btn btn-primary"><a class="text-white" asp-area="" asp-controller="Inventory" asp-action="StoreRequest">📨 Store request</a></button>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <h5>Supplier</h5>
+            <div class="card mb-3">
+                <div class="card-body d-flex justify-content-between align-items-center">
+                    <div>
+                        <strong>Supplier name</strong><br />
+                        <small class="text-muted">location</small>
+                    </div>
+                    <button class="btn btn-outline-primary">View detail</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body d-flex justify-content-between align-items-center">
+                    <div>
+                        <strong>Supplier name</strong><br />
+                        <small class="text-muted">location</small>
+                    </div>
+                    <button class="btn btn-outline-primary">View detail</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Transactions Table -->
+    <h5>Recent Transactions</h5>
+    <div class="table-responsive bg-white rounded shadow-sm">
+        <table class="table table-bordered mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th>Product_id</th>
+                    <th>product_name</th>
+                    <th>Category</th>
+                    <th>Total_Quantity_Sold</th>
+                    <th>Total_Sales_Amount</th>
+                    <th>Action</th>
+                    <th>Print</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>P001</td>
+                    <td>Coffee bean</td>
+                    <td>Food</td>
+                    <td>4</td>
+                    <td>20.00</td>
+                    <td>Edit Delete</td>
+                    <td>print</td>
+                </tr>
+                <tr>
+                    <td>P002</td>
+                    <td>Dutch milk</td>
+                    <td>Dairy Product</td>
+                    <td>0</td>
+                    <td>0.00</td>
+                    <td>Edit Delete</td>
+                    <td>print</td>
+                </tr>
+                <tr>
+                    <td>P003</td>
+                    <td>Coca cola</td>
+                    <td>Drink</td>
+                    <td>0</td>
+                    <td>0.00</td>
+                    <td>Edit Delete</td>
+                    <td>print</td>
+                </tr>
+                <tr>
+                    <td>P003</td>
+                    <td>Coca cola</td>
+                    <td>Drink</td>
+                    <td>0</td>
+                    <td>0.00</td>
+                    <td>Edit Delete</td>
+                    <td>print</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>

@@ -1,0 +1,140 @@
+﻿/*
+/* ── Arrow Tab Container ─────────────────────────── */
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.history-tabs {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    user-select: none;
+}
+
+#div {
+    font-family: 'Poppins', sans-serif;
+}
+
+#cardBlank {
+    width: 100%;
+}
+
+.history-tab {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px 12px 30px;
+    color: #fff; /* ← white text always */
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    min-width: 300px;
+    clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 0 100%, 18px 50%);
+}
+
+
+    First tab — no left arrow indent
+    .history-tab:first-child {
+        clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 0 100%);
+        padding-left: 10px;
+    }
+
+.history-tab:last-child {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 18px 50%);
+}
+     Overlap tabs so arrows connect 
+    .history-tab + .history-tab {
+        margin-left: -2px;
+    }
+
+/* ── Hover ───────────────────────────────────────── */
+    .history-tab:hover {
+        filter: brightness(1.15);
+        transform: scaleY(1.03);
+    }
+
+    /* ── Active Tab ──────────────────────────────────── */
+    .history-tab.active-tab {
+        filter: brightness(1) !important;
+        z-index: 2;
+    }
+
+    /* ── Inactive Tab ────────────────────────────────── */
+    .history-tab:not(.active-tab) {
+        filter: brightness(0.75);
+        z-index: 1;
+    }
+
+    /* ── Badge inside tab ────────────────────────────── */
+.history-tab .tab-badge {
+    margin-left: 8px;
+    background: rgb(108, 117, 125);
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+/* ── Section fade in ─────────────────────────────── */
+.history-section {
+    animation: fadeInUp 0.3s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ── Controls row — match employee.css ──────────────*/
+.controls-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+    .controls-row input[type="text"] {
+        height: 44px;
+        padding: 6px 12px;
+        font-size: 14px;
+        border: 1px solid #dee2e6;
+        border-radius: 6px;
+        outline: none;
+        width: 100%;
+    }
+
+        .controls-row input[type="text"]:focus {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 2px rgba(13,110,253,0.15);
+        }
+
+    .controls-row select {
+        border: 1px solid #dee2e6;
+        border-radius: 6px;
+        background: #fff;
+        cursor: pointer;
+    }
+
+/* ── Snapshot modal labels ───────────────────────── */
+#snapshotBody label.fw-bold {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin-bottom: 2px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#snapshotBody .row > div {
+    padding-bottom: 8px;
+}
