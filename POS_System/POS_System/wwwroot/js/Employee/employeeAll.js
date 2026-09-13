@@ -1,4 +1,4 @@
-﻿
+
 ; (function ($) {
     'use strict';
 
@@ -45,7 +45,7 @@
             { field: 'departmentName', title: 'Department' },
             { field: 'positionName', title: 'Position' },
             {
-                field: 'hireDate', title: 'Hire Date', sortable: true, sortable: true ,
+                field: 'hireDate', title: 'Hire Date', sortable: true,
                 formatter: function (v) { return v ? v.split('T')[0] : ''; }
             },
             {
@@ -179,30 +179,29 @@
     };
 
     
-    const deptData = {
-        1: { positions: [{ id: 1, name: 'Software Developer' }, { id: 2, name: 'System Administrator' }, { id: 3, name: 'Network Engineer' }, { id: 4, name: 'IT Support Specialist' }] },
-        2: { positions: [{ id: 5, name: 'Accountant' }, { id: 6, name: 'Financial Analyst' }, { id: 7, name: 'Credit Officer' }, { id: 8, name: 'Banking Operations Officer' }] },
-        3: { positions: [{ id: 9, name: 'HR Officer' }, { id: 10, name: 'Recruitment Specialist' }, { id: 11, name: 'Payroll Officer' }, { id: 12, name: 'Training Coordinator' }] },
-        4: { positions: [{ id: 13, name: 'Marketing Executive' }, { id: 14, name: 'Sales Representative' }, { id: 15, name: 'Digital Marketing Specialist' }, { id: 16, name: 'Business Development Officer' }] },
-        5: { positions: [{ id: 17, name: 'Operations Officer' }, { id: 18, name: 'Supply Chain Coordinator' }, { id: 19, name: 'Logistics Officer' }, { id: 20, name: 'Project Coordinator' }] },
-        6: { positions: [{ id: 21, name: 'Customer Service Representative' }, { id: 22, name: 'Call Center Agent' }, { id: 23, name: 'Client Support Officer' }, { id: 24, name: 'Customer Success Specialist' }] },
-        7: { positions: [{ id: 25, name: 'Research Analyst' }, { id: 26, name: 'Product Development Officer' }, { id: 27, name: 'Innovation Specialist' }, { id: 28, name: 'Quality Assurance Analyst' }] }
-    };
-
     function loadPositionReadOnly(employeeId) {
         $.get('/Employee/GetPosition?employeeId=' + employeeId, function (res) {
             if (!res.success || !res.employeePosition) return;
             const pos = res.employeePosition;
-            const dept = deptData[pos.departmentId];
 
             $('#DepartmentId').val(pos.departmentId);
-            $('#txtPositionName').html('<option value="" selected disabled>Select Position</option>');
-            if (dept) {
-                dept.positions.forEach(function (p) {
-                    $('#txtPositionName').append('<option value="' + p.id + '">' + p.name + '</option>');
+            $('#txtPositionName').html('<option value="" selected disabled>Loading...</option>');
+
+            if (pos.departmentId) {
+                $.get('/Employee/GetPositionsByDept?departmentId=' + encodeURIComponent(pos.departmentId), function (data) {
+                    $('#txtPositionName').html('<option value="" selected disabled>Select Position</option>');
+                    if (Array.isArray(data)) {
+                        data.forEach(function (p) {
+                            $('#txtPositionName').append($('<option>', {
+                                value: p.positionId,
+                                text: p.positionName
+                            }));
+                        });
+                    }
+                    if (pos.positionId) $('#txtPositionName').val(String(pos.positionId));
                 });
             }
-            $('#txtPositionName').val(pos.positionId);
+
             $('#StartDate').val(pos.startDate ? pos.startDate.split('T')[0] : '');
             $('#txtSalary').val(pos.salary);
             $('#EndDate').val(pos.endDate ? pos.endDate.split('T')[0] : '');

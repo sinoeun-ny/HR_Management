@@ -1,8 +1,9 @@
-﻿(function ($) {
+(function ($) {
     'use strict';
 
     $(function () {
         var modalElement = document.getElementById('deptModal');
+        if (!modalElement) return;
         var departmentModal = bootstrap.Modal.getOrCreateInstance(modalElement);
 
         // Prevent values from being treated as HTML.

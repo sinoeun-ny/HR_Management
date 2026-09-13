@@ -1,4 +1,4 @@
-﻿@model IEnumerable<POS_System.Models.Employee.Employee>
+@model IEnumerable<POS_System.Models.Employee.Employee>
 @{
     ViewData["Title"] = "Employee";
 }
@@ -254,44 +254,9 @@
     <table id="tblEmployeeInfo" class="table table-responsive table-bordered"></table>
 </div>
 
-<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<link href="~/lib/bootstrap-table/bootstrap-table.min.css" rel="stylesheet" />
-<link href="~/css/employee/employee.css" rel="stylesheet" />
-<link href="~/lib/sweetAlert/css/sweetAlert2.min.css" rel="stylesheet" />
+@section Scripts {
+    <script src="~/js/Ajaxs/ajaxHelper.js"></script>
+    <script src="~/js/EmpProfileValidation/Validation.js"></script>
+    <script src="~/js/Employee/employee.js"></script>
+}
 
-
-
-@*      ─
-   All scripts loaded from CDN so order is guaranteed.
-   _Layout.cshtml jQuery is neutralised by the noConflict
-   guard in employee.js — no more "$ is not defined".
-        ─ *@
-
-@* 1. jQuery — loaded ONCE here; _Layout version is ignored via noConflict guard *@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-@* 2. Bootstrap JS (needs jQuery) *@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-
-@* 3. Bootstrap Table (needs jQuery + Bootstrap) *@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.22.4/bootstrap-table.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.22.4/bootstrap-table.min.js"></script>
-
-@* 4. SweetAlert2 *@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.10.6/sweetalert2.all.min.js"></script>
-
-@* 5. Chart.js *@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
-
-@* 6. App scripts *@
-<script src="~/js/Ajaxs/ajaxHelper.js"></script>
-<script src="~/js/Employee/employee.js"></script>
-
-<script src="~/js/EmpProfileValidation/Validation.js"></script>
-
-
-
-<script>
-    
-    
-</script>

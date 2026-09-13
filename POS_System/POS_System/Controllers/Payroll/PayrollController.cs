@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using POS_System.Data;
 using System;
 using System.Collections.Generic;
@@ -33,7 +33,7 @@ namespace POS_System.Controllers.Payroll
         //  107  Failed to load an employee's payroll slip
         //  108  Invalid/missing request data (validation, not a DB error)
 
-        private static IActionResult ErrorResult(int code, string friendlyMessage, Exception ex = null, int httpStatus = 500)
+        private static IActionResult ErrorResult(int code, string friendlyMessage, Exception? ex = null, int httpStatus = 500)
         {
             if (ex != null) LogError(code, ex);
             return new ObjectResult(new { success = false, code = $"ERR-{code}", message = friendlyMessage })
@@ -61,15 +61,15 @@ namespace POS_System.Controllers.Payroll
                 {
                     list.Add(new PayrollInfo
                     {
-                        TransactionId = Convert.ToInt32(row["TransactionId"]),
-                        EmployeeId = Convert.ToInt32(row["EmployeeId"]),
-                        EmployeeName = row["EmployeeName"].ToString(),
-                        Email = row["Email"].ToString(),
-                        PhoneNumber = row["PhoneNumber"].ToString(),
+                        TransactionId = row["TransactionId"] == DBNull.Value ? 0 : Convert.ToInt32(row["TransactionId"]),
+                        EmployeeId = row["EmployeeId"] == DBNull.Value ? 0 : Convert.ToInt32(row["EmployeeId"]),
+                        EmployeeName = row["EmployeeName"]?.ToString() ?? "",
+                        Email = row["Email"]?.ToString() ?? "",
+                        PhoneNumber = row["PhoneNumber"]?.ToString() ?? "",
                         HireDate = row["HireDate"] == DBNull.Value ? null : (DateTime?)Convert.ToDateTime(row["HireDate"]),
-                        DepartmentName = row["DepartmentName"].ToString(),
-                        PositionName = row["PositionName"].ToString(),
-                        EmployeeStatus = row["EmployeeStatus"].ToString(),
+                        DepartmentName = row["DepartmentName"]?.ToString() ?? "",
+                        PositionName = row["PositionName"]?.ToString() ?? "",
+                        EmployeeStatus = row["EmployeeStatus"]?.ToString() ?? "",
                         PayrollPeriodId = row["PayrollPeriodId"] == DBNull.Value ? 0 : Convert.ToInt32(row["PayrollPeriodId"]),
                         PeriodStart = row["PeriodStart"] == DBNull.Value ? null : (DateTime?)Convert.ToDateTime(row["PeriodStart"]),
                         PeriodEnd = row["PeriodEnd"] == DBNull.Value ? null : (DateTime?)Convert.ToDateTime(row["PeriodEnd"]),
@@ -77,8 +77,8 @@ namespace POS_System.Controllers.Payroll
                         GrossSalary = row["GrossSalary"] == DBNull.Value ? 0 : Convert.ToDecimal(row["GrossSalary"]),
                         TaxDeductions = row["TaxDeductions"] == DBNull.Value ? 0 : Convert.ToDecimal(row["TaxDeductions"]),
                         NetSalary = row["NetSalary"] == DBNull.Value ? 0 : Convert.ToDecimal(row["NetSalary"]),
-                        Status = row["PayrollStatus"].ToString(),
-                        Notes = row["Notes"].ToString(),
+                        Status = row["PayrollStatus"]?.ToString() ?? "Pending",
+                        Notes = row["Notes"]?.ToString() ?? "",
                         CurrentPeriodStart = row["CurrentPeriodStart"] == DBNull.Value ? null : (DateTime?)Convert.ToDateTime(row["CurrentPeriodStart"]),
                         CurrentPeriodEnd = row["CurrentPeriodEnd"] == DBNull.Value ? null : (DateTime?)Convert.ToDateTime(row["CurrentPeriodEnd"]),
                         CurrentDay = row["CurrentDay"] == DBNull.Value ? 0 : Convert.ToInt32(row["CurrentDay"])
@@ -240,15 +240,15 @@ namespace POS_System.Controllers.Payroll
 
                 var records = dt.AsEnumerable().Select(r => new
                 {
-                    TransactionId = r.Field<int>("TransactionId"),
-                    PeriodLabel = r["PeriodLabel"] == DBNull.Value ? "N/A" : r.Field<string>("PeriodLabel"),
-                    PeriodDate = r["PeriodDate"] == DBNull.Value ? "N/A" : r.Field<string>("PeriodDate"),
-                    PayDate = r["PayDate"] == DBNull.Value ? null : (DateTime?)r.Field<DateTime>("PayDate"),
+                    TransactionId = r["TransactionId"] == DBNull.Value ? 0 : Convert.ToInt32(r["TransactionId"]),
+                    PeriodLabel = r["PeriodLabel"] == DBNull.Value ? "N/A" : (r["PeriodLabel"]?.ToString() ?? "N/A"),
+                    PeriodDate = r["PeriodDate"] == DBNull.Value ? "N/A" : (r["PeriodDate"]?.ToString() ?? "N/A"),
+                    PayDate = r["PayDate"] == DBNull.Value ? null : (DateTime?)Convert.ToDateTime(r["PayDate"]),
                     GrossSalary = r["GrossSalary"] == DBNull.Value ? 0 : Convert.ToDecimal(r["GrossSalary"]),
                     TaxDeductions = r["TaxDeductions"] == DBNull.Value ? 0 : Convert.ToDecimal(r["TaxDeductions"]),
                     NetSalary = r["NetSalary"] == DBNull.Value ? 0 : Convert.ToDecimal(r["NetSalary"]),
-                    Status = r["Status"] == DBNull.Value ? "Pending" : r.Field<string>("Status"),
-                    Notes = r["Notes"] == DBNull.Value ? "-" : r.Field<string>("Notes")
+                    Status = r["Status"] == DBNull.Value ? "Pending" : (r["Status"]?.ToString() ?? "Pending"),
+                    Notes = r["Notes"] == DBNull.Value ? "-" : (r["Notes"]?.ToString() ?? "-")
                 }).ToList();
 
                 return Json(records);

@@ -1,4 +1,4 @@
-﻿// ============================================================
+// ============================================================
 //  Payroll Page — payroll.js
 // ============================================================
 
@@ -7,6 +7,7 @@ let currentStatusFilter = ""; // tracks active status dropdown so search + statu
 
 // ── On Ready ─────────────────────────────────────────────────
 $(document).ready(function () {
+    if (!document.getElementById("payrollTable")) return;
     loadPayrollData();
     refreshPeriodTable();
 
@@ -204,21 +205,6 @@ function populateTable(data) {
             </td>
         </tr>`);
     });
-}
-
-// ── Summary Cards ─────────────────────────────────────────────
-
-function updateSummaryCards(data) {
-    let totalNet = 0, totalGross = 0;
-
-    $.each(data, function (_, emp) {
-        totalNet += Number(get(emp, "netSalary") ?? 0);
-        totalGross += Number(get(emp, "grossSalary") ?? 0);
-    });
-
-    const pct = totalGross === 0 ? 0 : (totalNet / totalGross) * 100;
-    $("#monthlyPayroll").text(`$${totalNet.toFixed(2)}`);
-    $("#payrollPercent").text(`${pct.toFixed(2)}% of total`);
 }
 
 // ── View Switch ───────────────────────────────────────────────

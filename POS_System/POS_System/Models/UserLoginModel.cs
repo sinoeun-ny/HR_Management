@@ -1,18 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Globalization;
+using System.ComponentModel.DataAnnotations;
 
 namespace POS_System.Models
 {
     public class UserLoginModel
     {
         [Required]
-        public string Email { get; set; }
-
+        public string Email { get; set; } = string.Empty;
 
         [Required]
         [DataType(DataType.Password)]
-        public string Password { get; set; }
-
-
+        public string Password { get; set; } = string.Empty;
     }
 }

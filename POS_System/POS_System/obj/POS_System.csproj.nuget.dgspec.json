@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\POS_System.csproj": {}
+    "D:\\checking\\HR_Mangement\\POS_System\\POS_System\\POS_System.csproj": {}
   },
   "projects": {
-    "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\POS_System.csproj": {
+    "D:\\checking\\HR_Mangement\\POS_System\\POS_System\\POS_System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\POS_System.csproj",
+        "projectUniqueName": "D:\\checking\\HR_Mangement\\POS_System\\POS_System\\POS_System.csproj",
         "projectName": "POS_System",
-        "projectPath": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\POS_System.csproj",
+        "projectPath": "D:\\checking\\HR_Mangement\\POS_System\\POS_System\\POS_System.csproj",
         "packagesPath": "C:\\Users\\Sinoeun\\.nuget\\packages\\",
-        "outputPath": "D:\\checking\\Intern_pos_project\\POS_System\\POS_System\\obj\\",
+        "outputPath": "D:\\checking\\HR_Mangement\\POS_System\\POS_System\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

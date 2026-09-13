@@ -1,4 +1,4 @@
-﻿; (function ($) {
+; (function ($) {
     'use strict';
 
 
@@ -247,7 +247,8 @@
         var url = '/Employee/GetEmpHis' + (p.length ? '?' + p.join('&') : '');
         $.get(url, function (data) {
             $('#tblEmployeeHistory').bootstrapTable('load', data);
-            document.getElementById('badgeProfile').textContent = data.length;
+            var badge = document.getElementById('badgeProfile');
+            if (badge) badge.textContent = data ? data.length : 0;
         });
     }
 
@@ -347,7 +348,8 @@
         var url = '/Employee/GetDocHis' + (p.length ? '?' + p.join('&') : '');
         $.get(url, function (data) {
             $('#tblDocumentHistory').bootstrapTable('load', data);
-            document.getElementById('badgeDocument').textContent = data.length;
+            var badge = document.getElementById('badgeDocument');
+            if (badge) badge.textContent = data ? data.length : 0;
         });
     }
 

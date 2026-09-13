@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Data;
 
 namespace POS_System.Data
@@ -26,7 +26,7 @@ namespace POS_System.Data
         }
         public SqlConnection GetConnection()
         {
-            string connectionString = _configuration.GetConnectionString("DefaultConnection");
+            string connectionString = _configuration.GetConnectionString("DefaultConnection") ?? "";
             return new SqlConnection(connectionString);
         }
         //for calling for select queries

@@ -1,12 +1,11 @@
-﻿namespace POS_System.Models.Department
+namespace POS_System.Models.Department
 {
     public class Department
     {
         public int DepartmentId { get; set; }
-        public  string DepartmentName { get; set; }
-        public  string Description { get; set; }
-        
-        public  string Abbreviation { get; set; }
+        public string DepartmentName { get; set; } = string.Empty;
+        public string? Description { get; set; }
+        public string? Abbreviation { get; set; }
         public DateTime ChangedDate { get; set; } = DateTime.Now;
 
         public string? CreatedBy { get; set; }
